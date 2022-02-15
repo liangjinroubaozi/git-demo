@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100%;
+            min-width: 320px;   
+            max-width: 640px; 
+            margin: auto;
+        }
+        @media screen and (min-width:750px){
+            .nones{
+                 display: block!important;
+              }
+              .imgs img:nth-child(1),.imgs img:nth-child(2){
+                   margin-right: 15px;
+                  }
+        }
+        .box{
+            background-color: #eee;
+        }
+        img{
+            vertical-align: top;
+        }
+        header{
+            height: 85px;
+            background-color: aquamarine;
+        }
+        .acenter{
+            height: 250px;
+        }
+        .bcenter{
+            position: relative;
+            width: 80%;
+            height: 235px;
+            margin: -40px auto;
+            background-color: white;
+        }
+        .circle img{
+            width: 70px;
+            height: 70px;
+            margin: 20px 0 0 15px;
+        }
+        .spa{
+            display: block;
+            width: 200px;
+            height: 70px;
+            margin: -55px 0 0 100px;
+            font-size: 13px;
+            color: #ccc;
+        }
+        .spa strong{
+            font-size: 16px;
+            color: turquoise;
+        }
+        .btn{
+            position: absolute;
+            width: 45px;
+            height: 25px;
+            top: 45px;
+            right: 10px;
+            color: red;
+            border: 1px solid red;
+            border-radius: 12px;
+            font-size: 12px;
+        }
+        .txt{
+            position: relative;
+            margin: 0px 0px 0px 10px;
+            color: #ccc;
+        }
+        .timer{
+            position: absolute;
+            float: left;
+            left: 127px;
+            top: 3px;
+        }
+        .timers{
+            float: left;
+            width: 14px;
+            height: 14px;
+            margin-left: 2px;
+            font-size: 10px;
+            color: red;
+            border: 1px solid red;
+            border-radius: 2px;
+        }
+        .txt strong{
+          color: black;
+          margin-right: 90px;
+        }
+        .imgs{
+            margin: 20px 5%;
+        }
+        .imgs img{
+            width: 125px;
+            height: 75px;
+        }
+        .imgs img:nth-child(1),.imgs img:nth-child(2){
+            margin-right: 7px;
+        }
+        .nones{
+            display: none;
+            margin:-75px 0 0 305px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <header>
+            
+        </header>
+        <div class="acenter">
+             <div class="bcenter">
+                 <div class="circle">
+                     <img src="组 2@2x.png" alt="头像">
+                     <span class="spa">
+                         <strong>恍恍惚惚过大年</strong>
+                         <br><br>
+                         有效期至:2022.02.02
+                     </span>
+                 </div>
+                 <button class="btn">删除</button>
+                 <span class="txt">
+                     <strong>月子餐#调理</strong>
+                     <div class="timer">
+                         <div class="timers">11</div>
+                         <div class="timers">02</div>
+                         <div class="timers">23</div>
+                     </div>
+                     距离下次配送
+                 </span>
+                 <div class="imgs">
+                    <img src="矩形 75@2x.png" alt="">
+                    <img src="矩形 75 拷贝@2x.png" alt="">
+                    <img src="矩形 78@2x.jpg" class="nones">
+                </div>
+             </div>
+        </div>
+    </div>
+</body>
+</html>
